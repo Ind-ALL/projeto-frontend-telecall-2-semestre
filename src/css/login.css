@@ -1,0 +1,123 @@
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#msgError{
+  text-align: center;
+  color: #ff0000;
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+.container .logo{
+  width: 230px;
+  margin: 5px;
+}
+
+.header .imagem-botao,
+.container .logo,
+.container .btn{
+  transition: 0.2s ease-in-out;
+}
+
+.header .imagem-botao:hover,
+.container .logo:hover,
+.container .btn:hover{
+  transform: scale(1.10);
+  cursor: pointer;
+}
+
+.form-control{
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.form-control label{
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input{
+  border: 2px solid #c8bdbd;
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 300px;
+  padding: 12px;
+}
+
+.form-control i{
+  position: absolute;
+  top: 46px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.form-control small{
+  position: absolute;
+  bottom: -5;
+  left: 15;
+}
+
+.area-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container .btn{
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  border: transparent;
+  cursor: pointer;
+}
+
+.container .btn.sign-in{
+  width: 180px;
+  color: #ffffff;
+  background-color: var(--red);
+  padding: 10px;
+}
+
+.container p{
+  margin-bottom: 15px;
+}
+
+.container p a{
+  color: #0000CD;
+}
+
+.area-register{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.container .title{
+  color:  var(--dark);
+}
+
+.container .btn.register{
+  color: #ffffff;
+  background-color: var(--blue);
+  padding: 12px 50px;
+}
+
+.container .btn.register a{
+  color: #ffffff;
+}

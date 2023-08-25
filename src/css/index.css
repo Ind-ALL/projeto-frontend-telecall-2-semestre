@@ -1,0 +1,241 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+body main{
+  align-self: center;
+  width: 80%;
+}
+
+
+
+/* Section - Carrossel */
+
+.carrossel .imagem{
+  width: 100%;
+  object-fit: cover;
+  display: none;
+  animation: mudarImagem 0.7s;
+}
+
+.carrossel .imagem.ativa{
+  display: block;
+}
+
+.carrossel .imagem{
+  transition: 0.8s;
+}
+
+.carrossel .imagem:hover{
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.botoes-carrossel{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  top: -20px;
+}
+
+.botoes-carrossel .botao{
+  background-color: var(--neve);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  border-color: var(--dark);
+}
+
+.botoes-carrossel .botao.selecionado{
+  background-color: var(--red)
+}
+
+
+/* Quando mudar a imagem dar um efeito na opacidade */
+@keyframes mudarImagem{
+  from{
+    opacity: 0.85;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+
+/* Section - card*/
+.cards{
+  max-width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text-card{
+  width: 100%;
+  font-size: 30px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  padding: 30px;
+  margin: 1%;
+  border: 1px solid var(--dark);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card:hover{
+  box-shadow: 0 0px 50px #ccc;
+}
+
+
+.card h3{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.card p{
+  margin-bottom: 20px;
+}
+
+.btn-card{
+  top: 500px;
+  padding: 15px;
+  background: var(--red);
+  color: var(--neve);
+  font-weight: 700;
+  border-radius: 10px;
+  transition: 1s;
+  transform: scale(1.10);
+}
+
+.btn-card:hover{
+  background-color: var(--blue);
+  box-shadow: 0 0px 5px var(--neve);
+}
+
+
+/* Section - Quem somos */
+
+.sobre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.quem-somos{
+  flex: 40%;
+  margin-right: 10%;
+}
+
+.quem-somos h2{
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+
+.img-sobre {
+  flex: 40%;
+  margin-left: 10%;
+  text-align: center;
+  
+}
+
+.img-sobre img{
+  max-width: 100%;
+}
+
+/* Footer */
+
+.footerContainer{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  background-color: var(--gray);
+}
+
+.logo-write{
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px ;
+}
+
+.logo-footer{
+  padding: 15px;
+}
+
+.social-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons a{
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  padding: 10px;
+  background-color: var(--neve);
+  margin: 15px;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.social-icons a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark);
+}
+
+
+.social-icons a:hover{
+  background-color: var(--dark);
+  transition: 0.5s;
+}
+
+.social-icons a:hover i{
+  color: #fff;
+  transition: 0.5s;
+}
+
+.links{
+  margin: 10px 0;
+}
+
+.links ul{
+  display: flex;
+  justify-content: center;
+}
+
+.links a{
+  color: #fff;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.0em;
+  transition: 0.5s;
+}
+
+.footer-element p{
+  opacity: 0.7;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 11px;
+}

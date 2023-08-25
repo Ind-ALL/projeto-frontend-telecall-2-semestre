@@ -1,0 +1,155 @@
+body{
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 10px;
+}
+
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.header #msgError{
+  margin-top: 10px;
+  text-align: center;
+  color: var(--red);
+  background-color: #ffbbbb;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+.header #msgSuccess{
+  margin-top: 10px;
+  text-align: center;
+  color: #00bb00;
+  background-color: #bbffbe;
+  padding: 10px;
+  border-radius: 4px;
+  display: none;
+}
+
+.column2{
+  margin-top: -100px;
+}
+
+.form-control{
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.form-control label{
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #676060;
+}
+
+.form-control input{
+  border: 2px solid #f0f0f0;
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 300px;
+  padding: 8px;
+}
+
+.form-control-genero{
+  width: 100px; 
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.form-control-genero p{
+  margin-right: 5px;
+}
+
+.form-control-genero label, input{
+  margin-right: 10px;
+  font-weight: 600;
+  color: #676060;
+}
+
+.form-control i{
+  position: absolute;
+  top: 44px;
+  right: 17px;
+  cursor: pointer;
+}
+
+.form-control small{
+  position: absolute;
+  bottom: -5;
+  left: 15;
+}
+
+.btn-enviar{
+  background-color: var(--blue);
+  border: 2px solid #0000CD;
+  color: var(--neve);
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-enviar:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.register{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.register a{
+  color: var(--blue);
+}
+
+.register img{
+  margin-top: 60px;
+  width: 200px;
+  transition: 0.2s ease-in-out;
+}
+
+.register img:hover{
+  transform: scale(1.10);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .column2{
+    margin-top: 0;
+  }
+}

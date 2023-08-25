@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/x-icon">
+    <title>Telecall - Login</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+    <main class="container">
+      <a href="index.html">
+        <img class="logo" src="./src/images/logo-telecall.png" alt="logo telecall">
+      </a>
+
+      <div id="msgError"></div>
+
+      <div class="area-login">
+        <form class="form-login form" id="form">
+
+          <div class="form-control">
+            <label id="labelusername" for="username">Login</label>
+            <input type="text" id="username" placeholder="Digite seu login" required>
+            <small id="validationusername"></small>
+          </div> 
+
+          <div class="form-control">
+            <label id="labelpassword" for="password">Senha</label>
+            <input type="password" id="password" placeholder="Digite sua senha" required>
+            <i class="fa-solid fa-eye"></i>
+            <small id="validationpassword"></small>
+          </div>
+
+          <div class="area-btn">
+            <button class="btn sign-in" onclick='entrar()'><a href="index.html" style="color: white;">Entrar</a> </button>
+          </div>
+        </form>
+        
+        <div class="area-register">
+          <h2 class="title">Não possui uma conta?</h2>
+          <button class="btn register"><a href="cadastro.html">Cadastrar-se agora</a></button>
+        </div>
+      </div>
+    </main>
+  <script src="./src/js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Telecall</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/variables.css" />
+    <link rel="stylesheet" href="./src/css/menu.css" />
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <link rel="stylesheet" href="./src/css/reponsivo.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,800;0,900;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="nav-info">
+        <div class="contato-whatsapp">
+          <a
+            href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial"
+          >
+            <img
+              class="bnt-whatsapp"
+              src="./src/images/icon-whatsapp.png"
+              alt=" icone do whatsapp"
+          /></a>
+          <h4>Whatsapp</h4>
+        </div>
+        <a class="btn-login" href="login.html"
+          >Login<i class="fa-solid fa-user"></i
+        ></a>
+      </div>
+
+      <div class="header-container">
+        <a href="#">
+          <img
+            class="logo"
+            src="./src/images/logo-telecall.png"
+            alt="Logo telecall"
+          />
+        </a>
+
+        <nav>
+          <input type="checkbox" id="menu-hamburguer" />
+
+          <label for="menu-hamburguer">
+            <div class="menu">
+              <span class="hamburguer"></span>
+            </div>
+          </label>
+
+          <ul>
+            <li><a href="https://telecall.com/internet/">Internet</a></li>
+            <li><a href="https://telecall.com/telefonia/">Telefonia</a></li>
+            <li>
+              <a href="https://telecall.com/rede-e-infraestrutura/">Rede & Infraestrutura</a>
+            </li>
+            <li><a href="https://telecall.com/eventos/">Eventos</a></li>
+            <li>
+              <a href="https://telecall.com/outsourcing-de-hardware/"
+                >Outras Soluções</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--botão autoatendimento-->
+    <span class="btn-atendimento">
+      <img
+        src="./src/images/Icone-Atendimento-Negocios.png"
+        alt="atendimento"
+      />
+    </span>
+
+    <main>
+      <section class="carrossel">
+        <a href="https://telecall.com/vendas/"
+          ><img
+            class="imagem ativa"
+            src="./src/images/tele-01-empresas.png"
+            alt="empresa banner"
+        /></a>
+
+        <a href="https://telecall.com/internet/"
+          ><img
+            class="imagem"
+            src="./src/images/tele-02-internet.png"
+            alt="internet banner"
+        /></a>
+
+        <a href="https://telecall.com/mobilidade/"
+          ><img
+            class="imagem"
+            src="./src/images/tele-03-mobile.png"
+            alt="mobile banner"
+        /></a>
+
+        <a href="https://telecall.com/rede-e-infraestrutura/"
+          ><img
+            class="imagem"
+            src="./src/images/tele-04-redeseinfra.png"
+            alt="redeseinfrabanner"
+        /></a>
+
+        <div class="botoes-carrossel">
+          <button class="botao selecionado"></button>
+          <button class="botao"></button>
+          <button class="botao"></button>
+          <button class="botao"></button>
+        </div>
+      </section>
+
+      <section class="cards">
+        <h1 class="text-card">Monte um plano com a sua cara!</h1>
+        <div class="card">
+          <img src="./src/images/icone-planos.png" alt="ícone planos" />
+          <h3>Planos Personalizados</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et totam
+            officiis optio cum incidunt iste, saepe possimus aliquid, deleniti
+            sunt accusantium eaque consequuntur. Aliquam est sit accusamus iste
+            quis hic?
+          </p>
+          <a href="https://telecall.com/vendas/" class="btn-card"
+            >Saiba Mais<i class="fa-sharp fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="card">
+          <img src="./src/images/icone-empresa.png" alt="ícone empresa" />
+          <h3>Telefonia</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et totam
+            officiis optio cum incidunt iste, saepe possimus aliquid, deleniti
+            sunt accusantium eaque consequuntur. Aliquam est sit accusamus iste
+            quis hic?
+          </p>
+          <a href="https://telecall.com/telefonia/" class="btn-card"
+            >Saiba Mais<i class="fa-sharp fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="card">
+          <img src="./src/images/icone-mobile.png" alt="ícone mobile" />
+          <h3>Flexibilidade</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et totam
+            officiis optio cum incidunt iste, saepe possimus aliquid, deleniti
+            sunt accusantium eaque consequuntur. Aliquam est sit accusamus iste
+            quis hic?
+          </p>
+          <a href="https://telecall.com/celular-empresarial/" class="btn-card"
+            >Saiba Mais<i class="fa-sharp fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </section>
+
+      <section class="sobre">
+        <div class="img-sobre">
+          <img src="./src/images/cartao-cel-quemSomos.png" />
+        </div>
+        <div class="quem-somos">
+          <h2>Sobre nós</h2>
+          <p>
+            A Telecall é uma operadora de telecomunicações brasileira que
+            oferece a seus clientes o mais alto padrão de qualidade, velocidade
+            e acessibilidade em soluções de comunicação. Serviços que incluem
+            uma ampla gama de valores agregados, oferecendo aos clientes
+            operações mais produtivas, inovadoras e eficazes. Com mais de 20
+            anos de experiência na indústria global, a Telecall hoje é sinônimo
+            de qualidade e eficiência.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footerContainer">
+        <div class="logo-footer">
+          <img
+            class="logo-write"
+            src="./src/images/logo-telecall-white.png"
+            alt="logo telecall"
+          />
+        </div>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/TelecallBr"
+            ><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/telecallbr/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/company/telecall/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+
+        <div class="links">
+          <ul>
+            <li><a href="#">Voltar ao Topo</a></li>
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="https://carreirastelecall.solides.jobs/">Carreiras</a></li>
+            <li><a href="https://telecall.com/contato/">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-element">
+          <p>Copyright &copy; 2022 Disigned by ....</p>
+        </div>
+      </div>
+    </footer>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
